@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        setTitle("Write Here");
         editText=(EditText)findViewById(R.id.editText);
         Intent intent=getIntent();
         noteId=intent.getIntExtra("noteId",-1);

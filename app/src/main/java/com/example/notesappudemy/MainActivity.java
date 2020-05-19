@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Notes");
         listView = (ListView) findViewById(R.id.listView);
         notes = new ArrayList<>();
         sharedPreferences= getSharedPreferences("com.example.notesappudemy", Context.MODE_PRIVATE);
